@@ -1,0 +1,28 @@
+{
+  "name": "civichack17",
+  "version": "2.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "",
+  "homepage": "",
+  "dependencies": {
+    "angular": "^1.4.8",
+    "angular-centered": "^1.0.1",
+    "angular-chart.js": "^1.1.1",
+    "angular-sanitize": "^1.4.0",
+    "angular-ui-router": "^0.4.2",
+    "angularjs-slider": "^6.0.0",
+    "express": "^4.13.3",
+    "jquery": "^2.2.0",
+    "moment": "^2.17.1",
+    "nodemon": "^1.8.1"
+  }
+}

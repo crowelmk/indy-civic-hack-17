@@ -1,0 +1,59 @@
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+
+.brand {
+    /**font-family: Helvetica, sans-serif;**/ /** 'Kavivanar', cursive;**/
+}
+
+.vertical-spacer {
+    width: 100%;
+    display: block;
+    clear: all;
+    padding-top: 2em;
+}
+
+.vertical-half-spacer {
+    width: 100%;
+    display: block;
+    clear: all;
+    padding-top: 1em;
+}
+
+.vertical-quarter-spacer {
+    width: 100%;
+    display: block;
+    clear: all;
+    padding-top: 0.25em;
+}
+
+.ui.statistic{
+  text-align: center;
+  width: 100%;
+  margin:auto;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 26pt;
+}
+.angular-center-container {
+    position: fixed;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    display:table;
+    pointer-events: none;
+    z-index:9999;
+}
+/*.angular-centered {*/
+    /*display: table-cell;*/
+    /*vertical-align: middle;*/
+    /*text-align: center;*/
+    /*margin: auto;*/
+/*}*/
