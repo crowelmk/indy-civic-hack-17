@@ -1,5 +1,16 @@
 # IndiVision
-The efficacy of government is reflected in the welfare of constituents, so we produced tools that will allow county governments to correlate spending to various wellness metrics.
+The efficacy of government is reflected in the welfare of constituents, so we produced tools that will allow county governments to correlate spending to various wellness metrics. <br>
+Indivision provides domain experts and policy makers look at four different kinds of views that can be used to understand quality of life metrics and their progress over the years as well as how they are correlated with budget planning.
+
+## Visualizations
+
+**High level metric changes over time:** Looks at the various metrics and their progression over the years. Can be filtered by multiple Counties.
+
+**Year over year change in metrics:** Highlights growth and problem areas on a County level.
+
+**Improvements in metrics since 2011:** Highlights an easy way to understand long term changes in quality of metrics over 2011 compared to the current scenario.
+
+**Correlation Explorer:** Explores correlations between metrics and the funds allocated to various items in the county budget.
 
 ## Usage
 Visit http://siriuscyberneticscorp.cf/ or http://sccorp.cf/ <br>
