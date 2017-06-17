@@ -24,7 +24,8 @@ CI_re = re.compile(CI_pattern)
 Z_re = re.compile(Z_pattern)
 regex_list = [CI_re, Z_re]
 
-cols_to_keep=['County', 'Teen Births', 'Teen Birth Rate']
+cols_to_keep_old=['County', 'Teen Births', 'Teen Birth Rate', 'AFGR', '% LBW', '% Children in Poverty']
+cols_to_keep_new=['County', 'Teen Births', 'Teen Birth Rate', 'Graduation Rate', '% LBW', '% Children in Poverty']
 
 def get_file(url, filename):
     try:
@@ -51,7 +52,7 @@ def keep_good_cols(df, cols_to_keep=[]):
 
 def load_dataset(year, url, sheetname="Ranked Measure Data", skiprows=1, bad_col_regex=list(), good_cols=list(), **kwargs):
     try:
-        file_path = "{path}/teenbirth_{year}.xls".format(path = RAW_FIXTURES_DIR, year = year)
+        file_path = "{path}/main_data_{year}.xls".format(path = RAW_FIXTURES_DIR, year = year)
         url = url
 
         path_to_file = get_file(url = url, filename = file_path)
@@ -68,12 +69,17 @@ def load_dataset(year, url, sheetname="Ranked Measure Data", skiprows=1, bad_col
         return df
 
 dfs = {}
+cols_to_keep = []
 for year, url in urls.items():
+    if int(year) < 2014:
+      cols_to_keep = cols_to_keep_old
+    else:
+      cols_to_keep = cols_to_keep_new
     dfs[year] = load_dataset(year, url, bad_col_regex=regex_list, good_cols = cols_to_keep)
 
 master_df = pd.concat([df for df in dfs.values()])
 
-master_df.to_csv("./fixtures/clean/teen_births.csv", sep = ',', index=False)
+master_df.to_csv("./fixtures/clean/main_data.csv", sep = ',', index=False)
 
 
 
