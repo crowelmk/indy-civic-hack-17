@@ -1,29 +1,4 @@
-
-(function () {
-    var app = angular.module('civichack17App', ['DataManager', 'ui.router', 'rzModule', 'angular-centered']);
-    app.config(function ($stateProvider, $urlRouterProvider) {//, $locationProvider) {
-        
-        // $locationProvider.html5Mode(true);
-        particlesJS.load('particles-js', 'particles-config.json', null);
-        $urlRouterProvider.otherwise('/');
-        $stateProvider
-            .state('home', {
-                url: '/',
-                abstract: false,
-                templateUrl: '/views/home.html',
-                controller: 'homeCtrl',
-                controllerAs: 'home'
-            });
-
-    });
-    app.directive('particles', function($window) {
-	return {
-		restrict: 'A',
-        replace: true,
-        template: '<div class="particleJs" id="particleJs"></div>',
-		link: function(scope, element, attrs, fn) {
-
-            $window.particlesJS('particleJs', {
+{
   "particles": {
     "number": {
       "value": 96,
@@ -132,10 +107,4 @@
     }
   },
   "retina_detect": false
-});
-
-		}
-	};
-});
-    app.exports = app;
-})();
+}

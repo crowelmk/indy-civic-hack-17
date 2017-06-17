@@ -8,6 +8,6 @@
  * Controller of the civichack17App
  */
 angular.module('civichack17App')
-  .controller('HomeCtrl', ['$scope', '$http', function ($scope, $http) {
+  .controller('homeCtrl', ['$scope', '$http', function ($scope, $http) {
 
   }]);
