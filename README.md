@@ -16,3 +16,8 @@ Angular 1, [particlejs](https://github.com/VincentGarreau/particles.js/), Tablea
 [Yearly budget data by county](http://www.in.gov/dlgf/8379.htm#Local), [Yearly wellness metrics by county](http://www.countyhealthrankings.org/app/indiana/2017/downloads)
 
 ## Screenshots
+![CorrelationExplorer1](/assets/CorrelationExplorer1.png)
+![CorrelationExplorer2](/assets/CorrelationExplorer2.png)
+![ImprovementsSince2011](/assets/ImprovementsSince2011.png)
+![MetricOverTime](/assets/MetricOverTime.png)
+![YearOverYearChange](/assets/YearOverYearChange.png)
