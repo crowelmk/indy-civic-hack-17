@@ -1,3 +1,4 @@
+<div particles></div>
 <div class="">
   <div class="ui inverted primary fixed top menu">
     <div class="item">
@@ -11,7 +12,6 @@
       <a ui-sref="login" ng-click="logout()" class="item">Logout</a>
     </div>-->
   </div>
-  <div particles></div>
 </div>
 <div class="vertical-spacer"></div>
 <div class="vertical-spacer"></div>
@@ -19,10 +19,17 @@
 <div class="vertical-spacer"></div>
 <div class="ui container">
     <div class="ui top attached tabular menu">
-        <div class="active item">Tab</div>
+        <a class="item active" data-tab="first">First</a>
+        <a class="item active" data-tab="second">Second</a>
+        <a class="item active" data-tab="third">Third</a>
     </div>
-    <div class="ui bottom attached active tab segment">
-        <p></p>
-        <p></p>
+    <div class="ui bottom attached tab segment active" data-tab="first">
+        First
+    </div>
+    <div class="ui bottom attached tab segment" data-tab="second">
+        Second
+    </div>
+    <div class="ui bottom attached tab segment" data-tab="third">
+        Third
     </div>
 </div>

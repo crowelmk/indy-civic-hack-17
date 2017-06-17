@@ -9,5 +9,7 @@
  */
 angular.module('civichack17App')
   .controller('homeCtrl', ['$scope', '$http', function ($scope, $http) {
-
+    $('.menu .item')
+      .tab()
+    ;
   }]);
