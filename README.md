@@ -1,4 +1,4 @@
-## Indivision
+# IndiVision
 The efficacy of government is reflected in the welfare of constituents, so we produced tools that will allow county governments to correlate spending to various wellness metrics.
 
 ## Usage
